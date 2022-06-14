@@ -1,0 +1,2 @@
+class EmpruntLivre < ApplicationRecord
+end

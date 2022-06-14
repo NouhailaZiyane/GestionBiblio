@@ -1,0 +1,35 @@
+<p style=color: green><%= notice %></p>
+
+<h1>Livres</h1>  
+ <br>
+<div class=btn-group role=group aria-label=Basic mixed styles example>
+  <%= link_to New livre; new_livre_path; class: btn btn-warning %>
+      <%= link_to Emprunt d\'un livre; emprunt_livres_path;class: btn btn-info %> </div>
+ <br>
+ <br>
+<div id=livres>
+  <% @livres.each do |livre| %>
+  <table class=table table-success table-striped>
+  <thead>
+    <tr>
+      <th scope=col>Titre</th>
+      <th scope=col>Auteur</th>
+      <th scope=col>Stock</th>
+      <th scope=col>   </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <%= render livre %>
+     
+     <td>
+     	<div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this livre; livre;class: btn btn-success %> 
+     	 </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>
+</div>

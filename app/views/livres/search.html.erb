@@ -1,0 +1,78 @@
+<h1>Résultats</h1>
+ <% @livre.each do |a| %>
+  
+  <table class=table table-success table-striped>
+  <thead>
+    <tr>
+      <th scope=col>Titre</th>
+      <th scope=col>Auteur</th>
+      <th scope=col>Stock</th>
+      <th scope=col></th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+  	<tr>
+  		<td>
+<%= a.titre %>
+  			
+  		</td>
+  		<td>
+<%= a.auteur %>
+  			
+  		</td>
+  		<td>
+<%= a.stock %>
+  			
+  		</td>
+
+  	<td>
+     	<div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this livre; a;class: btn btn-success %> 
+     	 </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>
+
+<% @livre1.each do |a| %>
+  
+  <table class=table table-success table-striped>
+  <thead>
+    <tr>
+      <th scope=col>Titre</th>
+      <th scope=col>Auteur</th>
+      <th scope=col>Stock</th>
+      <th scope=col></th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>
+<%= a.titre %>
+        
+      </td>
+      <td>
+<%= a.auteur %>
+        
+      </td>
+      <td>
+<%= a.stock %>
+        
+      </td>
+
+    <td>
+      <div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this livre; a;class: btn btn-success %> 
+       </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>

@@ -1,0 +1,14 @@
+<p style=color: green><%= notice %></p>
+
+<h1>Emprunt des livres</h1>
+
+<div id=emprunt_livres>
+  <% @emprunt_livres.each do |emprunt_livre| %>
+    <%= render emprunt_livre %>
+    <p>
+      <%= link_to Show this emprunt; emprunt_livre %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to New emprunt de livre; new_emprunt_livre_path %>

@@ -1,0 +1,12 @@
+<p style=color: green><%= notice %></p>
+
+<%= render @adherent %>
+
+<br>
+
+  <p><%= link_to Edit this adherent; edit_adherent_path(@adherent)  ; class: btn btn-warning%> </p>
+  <%= button_to Destroy this adherent; @adherent; method: :delete; class: btn btn-danger %>
+<br>
+  <strong><%= link_to Back to adherents; adherents_path %></strong>
+
+

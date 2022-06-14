@@ -1,0 +1,14 @@
+<p style=color: green><%= notice %></p>
+
+<h1>Emprunt des ordinateurs</h1>
+
+<div id=emprunt_pcs>
+  <% @emprunt_pcs.each do |emprunt_pc| %>
+    <%= render emprunt_pc %>
+    <p>
+      <%= link_to Show this emprunt; emprunt_pc %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to New emprunt d'ordinateur; new_emprunt_pc_path %>

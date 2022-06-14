@@ -1,0 +1,2 @@
+class EmpruntPc < ApplicationRecord
+end

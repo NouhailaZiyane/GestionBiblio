@@ -1,0 +1,10 @@
+<p style=color: green><%= notice %></p>
+
+<%= render @emprunt_livre %>
+
+<div>
+  <%= link_to Edit this emprunt livre; edit_emprunt_livre_path(@emprunt_livre) %> |
+  <%= link_to Back to emprunt livres; emprunt_livres_path %>
+
+  <%= button_to Destroy this emprunt livre; @emprunt_livre; method: :delete %>
+</div>

@@ -1,0 +1,40 @@
+<p style=color: green><%= notice %></p>
+
+<h1>Adhèrents</h1>
+ <br>
+<div class=btn-group role=group aria-label=Basic mixed styles example>
+  <%= link_to New adherent; new_adherent_path ; class: btn btn-warning %>
+ </div>
+ <br>
+ <br>
+ <form class=d-flex action=/search2>
+        <input class=form-control me-1 name=q type=text placeholder=Chercher un adherent aria-label=chercher un ordinateur>
+        <button class=btn btn-info type=submit>Search</button>
+      </form>
+ <br>
+ <br>
+<div id=adherents>
+  <% @adherents.each do |adherent| %>
+  <table class=table table-success table-striped>
+  <thead>
+    <tr>
+      <th scope=col>Nom</th>
+      <th scope=col>Prénom</th>
+      <th scope=col>Profession</th>
+      <th scope=col>  </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <%= render adherent %>
+     <td>
+     	<div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this adherent; adherent;class: btn btn-success %> 
+     	 </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>
+</div>

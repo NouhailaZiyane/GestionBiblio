@@ -1,0 +1,33 @@
+<%= form_with(model: emprunt_pc) do |form| %>
+  <% if emprunt_pc.errors.any? %>
+    <div style=color: red>
+      <h2><%= pluralize(emprunt_pc.errors.count; error) %> prohibited this emprunt_pc from being saved:</h2>
+
+      <ul>
+        <% emprunt_pc.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nom_adherent;Nom de l'adhèrent; style: display: block %>
+    <%= form.text_field :nom_adherent; class: form-control %>
+  </div>
+
+  <div>
+    <%= form.label :prenom_adherent;Prénom de l'adhèrent; style: display: block %>
+    <%= form.text_field :prenom_adherent; class: form-control %>
+  </div>
+
+  <div>
+    <%= form.label :marque_ordinateur;Marque de l'ordinateur; style: display: block %>
+    <%= form.text_field :marque_ordinateur; class: form-control %>
+  </div>
+<br>
+<br>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

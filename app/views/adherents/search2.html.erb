@@ -1,0 +1,90 @@
+<h1>Résultats</h1>
+ <table class=table table-success table-striped>
+  <thead>
+    <tr>
+      <th scope=col>Nom</th>
+      <th scope=col>Prénom</th>
+      <th scope=col>Profession</th>
+      <th scope=col></th>
+
+    </tr>
+  </thead>
+  <tbody>
+ <% @adherent.each do |a| %>
+  
+
+  	<tr>
+  		<td>
+<%= a.nom %>
+  			
+  		</td>
+  		<td>
+<%= a.prenom %>
+  			
+  		</td>
+  		<td>
+<%= a.profession %>
+  			
+  		</td>
+
+  	<td>
+     	<div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this adherent; a;class: btn btn-success %> 
+     	 </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>
+ <% @adherent1.each do |a| %>
+
+  	<tr>
+  		<td>
+<%= a.nom %>
+  			
+  		</td>
+  		<td>
+<%= a.prenom %>
+  			
+  		</td>
+  		<td>
+<%= a.profession %>
+  			
+  		</td>
+
+  	<td>
+     	<div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this adherent; a;class: btn btn-success %> 
+     	 </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>
+   <% @adherent2.each do |a| %>
+    <tr>
+      <td>
+<%= a.nom %>
+        
+      </td>
+      <td>
+<%= a.prenom %>
+        
+      </td>
+      <td>
+<%= a.profession %>
+        
+      </td>
+
+    <td>
+      <div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this adherent; a;class: btn btn-success %> 
+       </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>

@@ -1,0 +1,11 @@
+<p style=color: green><%= notice %></p>
+
+<%= render @livre %>
+<br><br>
+
+  <p><%= link_to Edit this livre; edit_livre_path(@livre) ; class: btn btn-warning%> </p>
+  <%= button_to Destroy this livre; @livre; method: :delete; class: btn btn-danger %>
+<br>
+  <strong><%= link_to Back to livres; livres_path %></strong>
+
+

@@ -1,0 +1,42 @@
+<p style=color: green><%= notice %></p>
+
+<h1>Ordinateurs</h1>
+ <br>
+<div class=btn-group role=group aria-label=Basic mixed styles example>
+  <%= link_to New ordinateur; new_ordinateur_path ; class: btn btn-warning %>
+      <%= link_to Emprunt d\'un ordinateur; emprunt_pcs_path;class: btn btn-info %> </div>
+ <br>
+ <br>
+ <br>
+ <form class=d-flex action=/search1>
+        <input class=form-control me-2 name=q type=text placeholder=Chercher un ordinateur aria-label=chercher un ordinateur>
+        <button class=btn btn-outline-success type=submit>Search</button>
+      </form>
+ <br>
+<div id=ordinateurs>
+  <% @ordinateurs.each do |ordinateur| %>
+  
+  <table class=table table-success table-striped>
+  <thead>
+    <tr>
+      <th scope=col>Marque</th>
+      <th scope=col>Description</th>
+      <th scope=col></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <%= render ordinateur %>
+  
+     
+     <td>
+     	<div class=btn-group role=group aria-label=Basic mixed styles example>
+      <%= link_to Show this ordinateur; ordinateur;class: btn btn-success %> 
+     	 </div>
+
+     </td> 
+ </tr>
+  </tbody>
+</table> 
+  <% end %>
+</div>
